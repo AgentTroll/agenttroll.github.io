@@ -28,7 +28,8 @@
       .moveRight {
         float: right;
         clear: both;
-        padding-right: 400px;
+        padding-right: 375px;
+        width: 200px;
       }
  
       .dropdown:hover .dropdown-menu {
@@ -197,8 +198,25 @@
       </nav>
  
       <div class="moveRight">
-        <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary"><a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
+          <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">
+            Tweets by @AgentTrolldude
+          </a>
+          <script>
+            !function(d, s, id) {
+              var js,
+                  fjs = d.getElementsByTagName(s)[0],
+                  p   = /^http:/.test(d.location)?'http':'https';
+                
+              if(!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            }(document,"script","twitter-wjs");
+          </script>
+        </div>
       </div>
       
       <section id="footer" class="footStyle">
