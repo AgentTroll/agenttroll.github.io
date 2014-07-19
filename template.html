@@ -16,8 +16,6 @@
       .bodyStyle {
         padding-top: 70px;
         padding-bottom: 40px;
-        padding-right: 385px;
-        padding-left: 385px;
       }
  
       .footStyle {
@@ -83,7 +81,7 @@
               
               <li class="dropdown">
                 <a href="./downloads.html">
-                  Downloads
+                  Downloads <span class="badge">1</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -219,11 +217,28 @@
         </div>
       </nav>
       
+      <div class="alert alert-info" role="alert">
+        <p>Whoops! This page is not the main website. Do you want to go <a href="index.html">home</a>?</p>
+        
+        <p>Current progress: </p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+            <span class="sr-only">86% Complete</span>
+            86%
+          </div>
+        </div>
+      </div>
+      
       <div class="row">
         <div class="col col-lg-10"><div class="well">
+          <!-- The content will go here -->
+          <!-- Content START -->
+          
           <h2>This is an in-dev template page that will be used to represent different pages on my website.</h2>
           
           <p>Move along now.</p>
+          
+          <!-- Content END -->
         </div></div>
         <div class="col col-lg-2">
           <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
@@ -246,25 +261,29 @@
         </div>
       </div>
       
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-          var disqus_shortname = 'agenttrollakaxtrollxdudex';
-  
-          (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      <div class="row">
+        <div class="col col-lg-12">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              var disqus_shortname = 'agenttrollakaxtrollxdudex';
       
-      <div id="footer" class="footStyle">
-        <div class="container">
-          <center><p style="padding-top: 5px;">
-            &copy; 2014 <a href="https://github.com/AgentTroll">AgentTroll</a>
-          </p></center>
-        </div>
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          <div id="footer" class="footStyle">
+            <div class="container">
+              <center><p style="padding-top: 5px;">
+                &copy; 2014 <a href="https://github.com/AgentTroll">AgentTroll</a>
+              </p></center>
+            </div>
+          </div>
+        </div>  
       </div>
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
