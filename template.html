@@ -19,6 +19,8 @@
         padding-right: 390px;
         padding-left: 390px;
       }
+      
+      body:not(#move) { padding-right: 390px; }
  
       .footStyle {
         position: fixed;
@@ -49,12 +51,12 @@
       
       .nav navbar-nav .footStyle {
         background-color: ffffff;
-        opacity: 0.6;
+        opacity: 0.5;
       }
     </style>
   </head>
  
-  <body class="bodyStyle">
+  <body>
     <a class="sr-only" href="#content" id="top">Skip navigation</a>
       <nav class="navbar navbar-default navbar-fixed-top hidden-print" id="header" role="navigation">
         <div class="container">
@@ -252,7 +254,7 @@
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       
-      <section id="footer" class="footStyle">
+      <section id="move" class="footStyle">
         <div id="footer">
           <div class="container">
             <center><p class="text-muted">
