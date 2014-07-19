@@ -50,7 +50,7 @@
       }
       
       .nav navbar-nav .footStyle {
-        background-color: ffffff !important;
+        background-color: ffffff;
         opacity: 0.5;
       }
     </style>
@@ -219,11 +219,12 @@
         </div>
       </nav>
  
-      <div class="moveRight">
-        <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
-          <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">
+      <div class="panel panel-default moveRight">
+        <div class="panel-heading"><a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">
             Tweets by @AgentTrolldude
-          </a>
+        </a></div>
+        <div class="panel-body">
+          <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
           <script>
             !function(d, s, id) {
               var js,
@@ -239,7 +240,27 @@
             }(document,"script","twitter-wjs");
           </script>
         </div>
+        </div>
       </div>
+ 
+      <!--<div class="moveRight">
+        <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
+          <script>
+            !function(d, s, id) {
+              var js,
+                  fjs = d.getElementsByTagName(s)[0],
+                  p   = /^http:/.test(d.location)?'http':'https';
+                
+              if(!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            }(document,"script","twitter-wjs");
+          </script>
+        </div>
+      </div>-->
       
       <div id="disqus_thread"></div>
       <script type="text/javascript">
