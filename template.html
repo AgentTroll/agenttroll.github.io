@@ -63,12 +63,6 @@
       .dropdown-menu {
         background-color: rgba(256, 256, 256, 0.8);  
       }
-      
-      dropdown a:hover {
-        -moz-box-shadow:    inset 0 0 5px a9a9a9;
-        -webkit-box-shadow: inset 0 0 5px a9a9a9;
-        box-shadow:         inset 0 0 5px a9a9a9;  
-      }
     </style>
   </head>
  
@@ -234,28 +228,34 @@
           </div>
         </div>
       </nav>
- 
-      <h2>This is an in-dev template page that will be used to represent different pages on my website.</h2>
+      
+      <div class="row">
+        <div class="span10">
+          <h2>This is an in-dev template page that will be used to represent different pages on my website.</h2>
+          
+          <p>Move along now.</p>
+        </div>
         
-      <p>Move along now.</p>
-        
-      <div class="moveRight">
-        <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
-        <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
-          <script>
-            !function(d, s, id) {
-              var js,
-                  fjs = d.getElementsByTagName(s)[0],
-                  p   = /^http:/.test(d.location)?'http':'https';
-                
-              if(!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p+"://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document,"script","twitter-wjs");
-          </script>
+        <div class="span3 offset2">
+          <div class="moveRight">
+            <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
+            <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
+              <script>
+                !function(d, s, id) {
+                  var js,
+                      fjs = d.getElementsByTagName(s)[0],
+                      p   = /^http:/.test(d.location)?'http':'https';
+                    
+                  if(!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }
+                }(document,"script","twitter-wjs");
+              </script>
+            </div>
+          </div>
         </div>
       </div>
       
