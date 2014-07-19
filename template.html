@@ -20,17 +20,11 @@
         padding-left: 385px;
       }
  
-      .constrain {
-        padding-left: 385px;
-        padding-right: 535px;
-      }
- 
       .footStyle {
         position: fixed;
         bottom: 0;
         width: 900px;
         height: 30px;
-        background-color: rgba(248, 248, 248, 0.8);
         border-top: 1px solid;
         border-color: #e7e7e7;
         
@@ -41,7 +35,7 @@
         margin-right: -3000px;
       }
       
-      .navStyle {
+      .navStyle .footStyle .dropdown-menu {
         background-color: rgba(248, 248, 248, 0.8);  
       }
  
@@ -58,10 +52,6 @@
  
       .dropdown:hover .dropdown-menu {
         display: block;        
-      }
-      
-      .dropdown-menu {
-        background-color: rgba(256, 256, 256, 0.8);  
       }
     </style>
   </head>
@@ -230,31 +220,28 @@
       </nav>
       
       <div class="row">
-        <div class="span10">
+        <div class="col col-lg-10"><div class="well">
           <h2>This is an in-dev template page that will be used to represent different pages on my website.</h2>
           
           <p>Move along now.</p>
-        </div>
-        
-        <div class="span3 offset2">
-          <div class="moveRight">
-            <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
-            <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
-              <script>
-                !function(d, s, id) {
-                  var js,
-                      fjs = d.getElementsByTagName(s)[0],
-                      p   = /^http:/.test(d.location)?'http':'https';
-                    
-                  if(!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                }(document,"script","twitter-wjs");
-              </script>
-            </div>
+        </div></div>
+        <div class="col col-lg-2">
+          <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
+          <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
+            <script>
+              !function(d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0],
+                    p   = /^http:/.test(d.location)?'http':'https';
+                  
+                if(!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p+"://platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document,"script","twitter-wjs");
+            </script>
           </div>
         </div>
       </div>
