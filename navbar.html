@@ -6,7 +6,11 @@
     <title>NavBar</title>
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="search.html"></script>
+    <script type="text/javascript">
+      function search(form) {
+        window.location = "https://www.google.com/search?q=site:agenttroll.github.io+" + form.q;  
+      }
+    </script>
   </head>
   <body>
     <a class="sr-only" href="#content" id="top">Skip navigation</a>
@@ -160,7 +164,7 @@
               </li>
             </ul>
               
-            <form action="./search.html" class="navbar-form navbar-right hidden-sm" method="GET" onsubmit="search(this.form)" role="search">
+            <form class="navbar-form navbar-right hidden-sm" method="GET" onsubmit="search(this.form)" role="search">
               <div class="form-group">
                 <input class="search-query form-control" id="global-search-query" name="q" placeholder="Search" type="text">
               </div>
