@@ -10,15 +10,6 @@
       function search(form) {
         window.location = "https://www.google.com/search?q=site:agenttroll.github.io+" + form.q;  
       }
-      
-      $('#popover').popover({
-        html: true,
-        placement: bottom,
-        trigger: 'hover',
-        content: function () {
-          return '<img src="'+$(this).data('img') + '" />';
-        }
-      });
     </script>
     
     <style>
@@ -229,6 +220,7 @@
       </nav>
       
       <div class="alert alert-warning" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <p>Whoops! This page is not the main website. Do you want to go <a href="index.html">home</a>?</p>
         
         <p>Current progress: </p>
@@ -247,9 +239,9 @@
           
           <h2>This is an in-dev template page that will be used to represent different pages on my website.</h2>
           
-          <p><a class="btn" id="popover" data-img="http://imgur.com/XDnwnPS">
+          <p>
             Move along now.
-          </a></p>
+          </p>
           
           <!-- Content END -->
         </div></div>
