@@ -16,17 +16,19 @@
         padding-left: 15%;
       }
  
+      .footStyle div:not(.footStyle) {
+        padding-right: 15%;
+        padding-left: 15%;
+      }
+
+
       .footStyle {
         padding: 0px 0px 0px 0px;
         height: 50px;
         border-top: 1px solid;
         border-color: e7e7e7;
-        background-color: 787878;
-      }
-      
-      .navStyle {
-        background-color: c0c0c0 !important;
-      }
+        background-color: a0a0a0;
+      } 
       
       .dropdown:hover {
         -moz-box-shadow:    inset 0 0 5px a9a9a9;
@@ -38,7 +40,7 @@
         display: block;        
       }
 
-      .panel-body.in {
+      .panel-body {
         overflow: auto;
       }
     </style>
@@ -47,7 +49,7 @@
   <body class="bodyStyle">
     <a class="sr-only" href="#content" id="top">Skip navigation</a>
       <nav class="navbar navbar-default navbar-fixed-top hidden-print" id="header" role="navigation">
-        <div class="container navStyle">
+        <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
               <span class="sr-only">Toggle navigation</span>
