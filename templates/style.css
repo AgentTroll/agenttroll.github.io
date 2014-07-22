@@ -12,16 +12,16 @@
   bottom: 0;
   padding: 0px 0px 0px 0px;
   height: 30px;
-  width: 100%
+  width: 100%;
 
   border-top: 5px solid #808080;
-  background-color: f0f0f0;
+  background-color: #f0f0f0;
 } 
       
 .dropdown:hover {
-  -moz-box-shadow:    inset 0 0 5px a9a9a9;
-  -webkit-box-shadow: inset 0 0 5px a9a9a9;
-  box-shadow:         inset 0 0 5px a9a9a9;
+  -moz-box-shadow:    inset 0 0 5px #a9a9a9;
+  -webkit-box-shadow: inset 0 0 5px #a9a9a9;
+  box-shadow:         inset 0 0 5px #a9a9a9;
 }
  
 .dropdown:hover .dropdown-menu {
