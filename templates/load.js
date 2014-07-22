@@ -10,7 +10,19 @@ var loadPage = function (href) {
 
 var load = function (doc) {
   'use strict';
+  var xmlhttp = new XMLHttpRequest();
   
-  doc.getElementById("navbar").innerHTML = loadPage("/templates/navbar.html");
-  doc.getElementById("footer").innerHTML = loadPage("/templates/footer.html");
+  xmlhttp.open("GET", "/templates/navbar.html", false);
+  xmlhttp.send();
+
+  return xmlhttp.responseText;
+  
+  doc.getElementById("navbar").innerHTML = xmlhttp.responseText;
+  
+  var xml = new XMLHttpRequest();
+  
+  xml.open("GET", "/templates/footer.html", false);
+  xml.send();
+  
+  doc.getElementById("footer").innerHTML = xml.responseText;
 };
