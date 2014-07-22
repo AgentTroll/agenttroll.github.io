@@ -7,6 +7,7 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="javascript" type="text/javascript" href="templates/disqus.js">
 
     <script type="text/javascript">
       function loadPage(href) {
@@ -67,25 +68,32 @@
         class="bodyStyle">
     <div id="navbar"></div>
       
-      <center><h1>Home</p></center>
+    <center><h1>Home</p></center>
 
-      <div class="row">
-        <span class="col col-lg-10"><div class="well">
-          <!-- The content will go here -->
-          <!-- Content START -->
+    <div class="row">
+      <span class="col col-lg-10"><div class="well">
+        <!-- The content will go here -->
+        <!-- Content START -->
           
-          <h2>Hey there. The name is AgentTroll. I am a programmer in Java, and I am learning web development.</h2>
-          <h4>Have a look around.</h4>
+        <h2>Hey there. The name is AgentTroll. I am a programmer in Java, and I am learning web development.</h2>
+        <h4>Have a look around.</h4>
           
-          <!-- Content END -->
-        </div></span>
-        <div id="twitter"></div>
-      </div>
+        <!-- Content END -->
+      </div></span>
+      <div id="twitter"></div>
+    </div>
      
-      <div id="footer"></div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="js/bootstrap.js"></script>
+    <div class="col col-lg-12">
+      <div id="disqus_thread"></div>
+      <div id="disqus" onLoad="disqus(document)"></div>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>  
+    
+    <div id="footer"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
           
