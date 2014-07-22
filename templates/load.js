@@ -1,4 +1,4 @@
-function loadPage(href) {
+var loadPage = function(href) {
   var xmlhttp = new XMLHttpRequest();
  
   xmlhttp.open("GET", href, false);
