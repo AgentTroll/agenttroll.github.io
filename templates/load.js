@@ -1,6 +1,6 @@
 var load = function(document) {
-  document.getElementById('navbar').innerHTML = loadPage('/templates/navbar.html');
-  document.getElementById('footer').innerHTML = loadPage('/templates/footer.html');
+  document.getElementById('navbar').innerHTML = loadPage('navbar.html');
+  document.getElementById('footer').innerHTML = loadPage('footer.html');
 };
 
 var loadPage = function(href) {
