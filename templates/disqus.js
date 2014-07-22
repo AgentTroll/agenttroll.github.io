@@ -1,4 +1,4 @@
-function disqus(doc) {
+var disqus = function(doc) {
   var disqus_shortname = 'agenttrolldude';
   var dsq = doc.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
