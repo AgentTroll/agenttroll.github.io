@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NavigationBar - AgentTroll</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .dropdown:hover {
+        -moz-box-shadow:    inset 0 0 5px a9a9a9;
+        -webkit-box-shadow: inset 0 0 5px a9a9a9;
+        box-shadow:         inset 0 0 5px a9a9a9;
+      }
+ 
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      
+      .clear {
+      	opacity: 0.8;
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <a class="sr-only" href="#content" id="top">Skip navigation</a>
+    <nav class="clear navbar navbar-default navbar-fixed-top hidden-print" id="header" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">
+            <span class="navbar-brand-logo"><img src="favicon.ico"></img></span>
+            AgentTroll
+          </a>
+        </div>
+          
+        <div class="navbar-collapse collapse row">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            
+            <li class="dropdown">
+              <a href="./downloads.html">
+                Downloads <span class="badge">1</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://github.com/AgentTroll/BukkitCommonsBuilds/blob/master/BukkitCommons.jar?raw=true">
+                    <i class="glyphicon glyphicon-cloud-download"></i>
+                    BukkitCommons - Latest Build
+                  </a>
+                </li>
+              </ul>
+            </li>
+              
+            <li class="dropdown">
+              <a href="whatido.html">
+                What I do
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="projects.html">
+                    <i class="glyphicon glyphicon-list"></i>
+                    Projects
+                  </a>
+                </li> 
+                
+                <li>
+                  <a href="http://atroll.myjetbrains.com/youtrack/dashboard">
+                    <i class="glyphicon glyphicon-exclamation-sign"></i>
+                    Issue tracker
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="lol.php">
+                    <i class="glyphicon glyphicon-save"></i>
+                    Builds
+                  </a>
+                </li> 
+              
+                <li>
+                  <a href="lol.php">
+                    <i class="glyphicon glyphicon-book"></i>
+                    Documentation
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="lol.php">
+                  <i class="glyphicon glyphicon-list-alt"></i>
+                  Examples
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="lol.php">
+                    <i class="glyphicon glyphicon-bookmark"></i>
+                    Favorites
+                    </a>
+                </li>
+      
+                <li class="hidden-xs" id="Promoted project">
+                   <a href="https://github.com/AgentTroll/BukkitCommons">
+                     <img src="http://i.imgur.com/fxmgihf.png" height="60px" width="60px">
+                       <br>
+                        <small>
+                         <strong>Featured</strong> project
+                         <br>
+                         BukkitCommons
+                       </small>
+                    </img>  
+                   </a>
+                </li>
+              </ul>
+            </li>
+              
+             <li class="dropdown">
+              <a href="./community.html">
+                Connect
+              </a>
+              
+              <ul class="dropdown-menu">
+                 <li>
+                   <a href="https://github.com/AgentTroll">
+                     Github
+                   </a>
+                 </li>
+                  
+                 <li>
+                  <a href="http://stackoverflow.com/users/3308999/xtrollxdudex">
+                    StackOverflow
+                   </a>
+                </li>
+                
+                <li>
+                  <a href="https://twitter.com/AgentTrolldude">
+                    @AgentTrolldude
+                  </a>
+                 </li>
+                  
+                 <li>
+                   <a href="lol.php">
+                     Who I am
+                   </a>
+                 </li>
+                  
+                 <li>
+                   <a href="http://agenttroll.github.io/blog">
+                     Blog
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="dropdown navbar-right">
+              <a href="https://github.com/AgentTroll/agenttroll.github.io">Source</a>
+            </li>
+           </ul>
+           
+           <li class="visible-xs" id="Promoted project">
+            <a href="https://github.com/AgentTroll/BukkitCommons">
+              <img src="http://i.imgur.com/fxmgihf.png" height="60px" width="60px">
+                <br>
+                <small>
+                  <strong>Featured</strong> project
+                  <br>
+                 BukkitCommons
+               </small>
+              </img>  
+             </a>
+           </li>
+          </div>
+        </div>
+      </nav>
+    </body>  
+</html>  
+      
