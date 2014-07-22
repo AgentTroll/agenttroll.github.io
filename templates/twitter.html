@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twitter - AgentTroll</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="twitter.js" rel="javascript">
     
     <style>
       .bodyStyle {
@@ -51,22 +52,8 @@
   <body>
     <span class="col col-lg-2">
       <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
-      <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
-        <script>
-          !function(d, s, id) {
-            var js,
-            fjs = d.getElementsByTagName(s)[0],
-            p   = /^http:/.test(d.location)?'http':'https';
-                
-            if(!d.getElementById(id)) {
-              js = d.createElement(s);
-              js.id = id;
-              js.src = p+"://platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js, fjs);
-            }
-          }(document,"script","twitter-wjs");
-        </script>
-      </div>
+      <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary"
+          onLoad="twitter(document,'script','twitter-wjs')"></div>
     </span>
   </body>
 </html>  
