@@ -8,6 +8,6 @@ var loadPage = function(href) {
 };
 
 var load = function(doc) {
-  doc.getElementById("navbar").innerHTML = loadPage("navbar.html");
-  doc.getElementById("footer").innerHTML = loadPage("footer.html");
+  doc.getElementById("navbar").innerHTML = loadPage("/templates/navbar.html");
+  doc.getElementById("footer").innerHTML = loadPage("/templates/footer.html");
 };
