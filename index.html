@@ -6,7 +6,18 @@
     <title>Home - AgentTroll</title>
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	  <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <script type="text/javascript">
+      function loadPage(href) {
+        var xmlhttp = new XMLHttpRequest();
+         
+        xmlhttp.open("GET", href, false);
+        xmlhttp.send();
+         
+        return xmlhttp.responseText;
+      }
+    </script>
 
     <style>
       .bodyStyle {
@@ -50,166 +61,10 @@
     </style>
   </head>
  
-  <body class="bodyStyle">
-    <a class="sr-only" href="#content" id="top">Skip navigation</a>
-      <nav class="clear navbar navbar-default navbar-fixed-top hidden-print" id="header" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html">
-              <span class="navbar-brand-logo"><img src="favicon.ico"></img></span>
-              AgentTroll
-            </a>
-          </div>
-        
-          <div class="navbar-collapse collapse row">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="index.html">
-                  Home
-                </a>
-              </li>
-              
-              <li class="dropdown">
-                <a href="./downloads.html">
-                  Downloads <span class="badge">1</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="https://github.com/AgentTroll/BukkitCommonsBuilds/blob/master/BukkitCommons.jar?raw=true">
-                      <i class="glyphicon glyphicon-cloud-download"></i>
-                      BukkitCommons - Latest Build
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="dropdown">
-                <a href="whatido.html">
-                  What I do
-                </a>
-                
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="projects.html">
-                      <i class="glyphicon glyphicon-list"></i>
-                      Projects
-                    </a>
-                  </li> 
-                  
-                  <li>
-                    <a href="http://atroll.myjetbrains.com/youtrack/dashboard">
-                      <i class="glyphicon glyphicon-exclamation-sign"></i>
-                      Issue tracker
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="lol.php">
-                      <i class="glyphicon glyphicon-save"></i>
-                      Builds
-                    </a>
-                  </li> 
-                
-                  <li>
-                    <a href="lol.php">
-                      <i class="glyphicon glyphicon-book"></i>
-                      Documentation
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="lol.php">
-                    <i class="glyphicon glyphicon-list-alt"></i>
-                    Examples
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="lol.php">
-                      <i class="glyphicon glyphicon-bookmark"></i>
-                      Favorites
-                    </a>
-                  </li>
-      
-                  <li class="hidden-xs" id="Promoted project">
-                    <a href="https://github.com/AgentTroll/BukkitCommons">
-                      <img src="http://i.imgur.com/fxmgihf.png" height="60px" width="60px">
-                        <br>
-                        <small>
-                          <strong>Featured</strong> project
-                          <br>
-                          BukkitCommons
-                        </small>
-                      </img>  
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="dropdown">
-                <a href="./community.html">
-                  Connect
-                </a>
-                
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="https://github.com/AgentTroll">
-                      Github
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://stackoverflow.com/users/3308999/xtrollxdudex">
-                      StackOverflow
-                    </a>
-                  </li>
-                
-                  <li>
-                    <a href="https://twitter.com/AgentTrolldude">
-                      @AgentTrolldude
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="lol.php">
-                      Who I am
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://agenttroll.github.io/blog">
-                      Blog
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="dropdown navbar-right">
-                  <a href="https://github.com/AgentTroll/agenttroll.github.io">Source</a>
-              </li>
-            </ul>
-            
-            <li class="visible-xs" id="Promoted project">
-              <a href="https://github.com/AgentTroll/BukkitCommons">
-                <img src="http://i.imgur.com/fxmgihf.png" height="60px" width="60px">
-                  <br>
-                  <small>
-                    <strong>Featured</strong> project
-                    <br>
-                    BukkitCommons
-                  </small>
-                </img>  
-              </a>
-            </li>
-          </div>
-        </div>
-      </nav>
+  <body onLoad="document.getElementById('navbar').innerHTML = loadPage('templates/navbar.html');
+                document.getElementById('twitter').innerHTML = loadPage('templates/twitter.html');
+                document.getElementById('footer').innerHTML = loadPage('templates/footer.html');">
+    <div id="navbar"></div>
       
       <center><h1>Home</p></center>
 
@@ -223,50 +78,10 @@
           
           <!-- Content END -->
         </div></span>
-        <span class="col col-lg-2">
-          <a class="twitter-timeline" href="https://twitter.com/AgentTrolldude" data-widget-id="481148427703558144">Tweets by @AgentTrolldude</a>
-          <div id="twitter-timeline" class="hidden-xs hidden-sm hidden-print" role="complementary">
-            <script>
-              !function(d, s, id) {
-                var js,
-                    fjs = d.getElementsByTagName(s)[0],
-                    p   = /^http:/.test(d.location)?'http':'https';
-                  
-                if(!d.getElementById(id)) {
-                  js = d.createElement(s);
-                  js.id = id;
-                  js.src = p+"://platform.twitter.com/widgets.js";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }
-              }(document,"script","twitter-wjs");
-            </script>
-          </div>
-        </span>
+        <div id="twitter.html"></div>
       </div>
-      
-      <div class="row">
-        <div class="col col-lg-12">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-              var disqus_shortname = 'agenttrolldude';
-      
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>  
      
-        <div id="footer" class="footStyle clear">
-          <div><center>
-            <p style="padding-top: 5px;">
-              &copy; 2014 <a href="https://github.com/AgentTroll">AgentTroll</a>
-            </p>
-          </center></div>
-        </div>
+      <div id="footer" class="footStyle clear"></div>
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/bootstrap.js"></script>
