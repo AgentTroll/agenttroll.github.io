@@ -1,4 +1,4 @@
-!function(d, s, id) {
+function twitter(d, s, id) {
   var js,
   fjs = d.getElementsByTagName(s)[0],
   p   = /^http:/.test(d.location)?'http':'https';
@@ -9,4 +9,4 @@
     js.src = p+"://platform.twitter.com/widgets.js";
     fjs.parentNode.insertBefore(js, fjs);
   }
-}(document,"script","twitter-wjs");
+}
