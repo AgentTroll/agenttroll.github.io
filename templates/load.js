@@ -5,7 +5,7 @@ var load = function (doc) {
     window.XMLHttpRequest= function() {
         return new ActiveXObject('MSXML2.XMLHttp');
     };
-}
+  }
   
   var xmlhttp = new XMLHttpRequest();
   
@@ -13,11 +13,11 @@ var load = function (doc) {
   
   xmlhttp.onreadystatechange = function() {
     if (this.readyState!==4 || this.status !== 200) {
-      document.getElementByID('navbar').innerHTML = "<b> Error reading navbar.html </b>";
+      doc.getElementByID('navbar').innerHTML = "<b> Error reading navbar.html </b>";
       return;
     }
     
-    document.getElementById('navbar').innerHTML= this.responseText;
+    doc.getElementById('navbar').innerHTML = this.responseText;
   };
   
   xmlhttp.send();
@@ -30,11 +30,11 @@ var load = function (doc) {
   
   xml.onreadystatechange = function() {
     if (this.readyState!==4 || this.status !== 200) {
-      document.getElementByID('footer').innerHTML = "<b> Error reading footer.html </b>";
+      doc.getElementByID('footer').innerHTML = "<b> Error reading footer.html </b>";
       return;
     }
     
-    document.getElementById('footer').innerHTML= this.responseText;
+    doc.getElementById('footer').innerHTML = this.responseText;
   };
   
   xml.send();
