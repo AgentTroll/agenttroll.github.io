@@ -9,7 +9,7 @@ var load = function (doc) {
   
   var xmlhttp = new XMLHttpRequest();
   
-  xmlhttp.open("GET", "/templates/navbar.html", true);
+  xmlhttp.open("GET", "/templates/navbar.html", false);
   
   xmlhttp.onreadystatechange = function() {
     if (this.readyState!==4 || this.status !== 200) {
@@ -24,7 +24,7 @@ var load = function (doc) {
   
   var xml = new XMLHttpRequest();
   
-  xml.open("GET", "/templates/footer.html", true);
+  xml.open("GET", "/templates/footer.html", false);
   
   xml.onreadystatechange = function() {
     if (this.readyState!==4 || this.status !== 200) {
