@@ -21,8 +21,6 @@ var load = function (doc) {
   };
   
   xmlhttp.send();
-
-  return xmlhttp.responseText;
   
   var xml = new XMLHttpRequest();
   
