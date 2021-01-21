@@ -11,10 +11,10 @@
 <div class="container">
     <div class="jumbotron">
         <div class="media">
-            <img src="media/avatar.png" alt="avatar" class="mr-3 align-self-center"
-                 style="max-height: 70px; max-width: 70px">
+            <!-- <img src="media/avatar.png" alt="avatar" class="mr-3 align-self-center"
+                 style="max-height: 70px; max-width: 70px"> -->
             <div class="media-body">
-                <h1>Hi, I'm AgentTroll</h1>
+                <h1>Hi, I'm Johnny</h1>
                 <h5>Welcome to my personal site</h5>
             </div>
         </div>
@@ -28,7 +28,6 @@
             <a href="https://github.com/AgentTroll" class="btn btn-outline-dark">GitHub</a>
             <a href="mailto:caojohnny@protonmail.com" class="btn btn-outline-danger">E-mail</a>
             <a href="https://www.linkedin.com/in/johnny-cao" class="btn btn-outline-info">LinkedIn</a>
-            <a href="https://www.goodreads.com/user/show/75713327-johnny" class="btn btn-outline-dark">Goodreads</a>
         </div>
     </div>
 
@@ -49,48 +48,18 @@
     </div>
 
     <div class="card" style="margin-top: 30px">
-        <h5 class="card-header">What I Do</h5>
-        <div class="card-body">
-            <p class="card-text">I have 7 years of experience working with the Java language. I try to do a little bit
-                of everything, whether it be GUI design, building APIs, writing applications, Bukkit plugins, 3D games,
-                you name it. Most of my work is published on GitHub, at least the ones I think are worth publishing.</p>
-            <p class="card-text">The vast majority of what I do involves Minecraft in some way. I contribute to a few
-                open-source projects, such as the <a href="https://github.com/EssentialsX/Essentials">EssentialsX</a>
-                project and smaller APIs some of my friends have written.</p>
-            <p class="card-text">I think many people will probably have heard of me from either the
-                Bukkit Forums (the account to which I inadvertently deleted a bit back) or the
-                <a href="https://www.spigotmc.org/members/xtrollxdudex.6621/">SpigotMC Forums</a>. Since I'm not
-                terribly good at coming up with project ideas, I like to browse the forums to look for interesting
-                problems that other developers run into. There's a particular thrill with having to get your hands dirty
-                and having to look around the server source code. Writing a short, elegant solution is just the cherry
-                on top. I help other people solve their problems, people can benefit from reading the source code and
-                picking up on what I've learned, and I get a blast of dopamine from doing some detective work.</p>
-            <p class="card-text">Although I've dabbled into a wide array of different projects, I am especially
-                passionate about investigating performance and analyzing multithreaded programs. I think that your code
-                shouldn't just look good, it should be fast and safe as well. It's always interesting to see lock-free
-                data structures or looking at how other people have worked around different obstacles to optimize
-                their program.</p>
-            <p class="card-text">I've also done some work involving the C and C++ languages. It feels liberating to be
-                able to use lower-level constructs and writing closer to the hardware once one is used to writing
-                high-level Java abstractions all the time.</p>
-            <p>I'm familiar as well with HTML, but I need a lot of hand-holding to work through it. I don't really take
-                a particular interest in web languages, and the look of my website is just an unfortunate side effect
-                from that.</p>
-        </div>
-    </div>
-
-    <div class="card" style="margin-top: 30px">
         <h5 class="card-header">My Work</h5>
         <div class="card-body">
             <h5 class="card-title">Professional Experience</h5>
             <ul>
-                <li class="card-text">I currently work at ExodusPrisons.</li>
-                <li class="card-text">I am a former Developer at SpaceDelta. I wrote and did the majority of maintenance
+                <li class="card-text">I am a former developer at ExodusPrisons.</li>
+                <li class="card-text">I am a former developer at SpaceDelta. I wrote and did the majority of maintenance
                     for the species plugin. I left in September 2019 because of disagreements I had with management.
                 </li>
-                <li class="card-text">I am a former Developer at Skytropia. The project was abandoned and the remnants
-                were transferred to ExodusPrisons.</li>
-                <li class="card-text">I am a former Senior Software Developer at Intermissum Limited. I worked for a
+                <li class="card-text">I am a former developer at Skytropia. The project was abandoned and the remnants
+                    were transferred to ExodusPrisons.
+                </li>
+                <li class="card-text">I am a former senior developer at Intermissum Limited. I worked for a
                     time on the reboot of the HCGames server, CryptoMC, as well as the highly successful
                     <a href="https://www.minesaga.org/">MineSaga</a> server network. I wrote the original minions
                     plugin, the generators plugin, the kits plugin, the gambling plugin, the original bosses plugin, and
@@ -106,94 +75,72 @@
                 </li>
             </ul>
 
-            <h5 class="card-title">Current Works</h5>
+            <h5 class="card-title">Projects</h5>
             <ul>
-                <li class="card-text">My top priority is always getting my job done first and foremost. After that, I'll
-                    often work on other projects. Since I'm currently working, that doesn't leave much time for myself,
-                    but I do try my best.
+                <li class="card-text"><a href="https://github.com/AgentTroll/telem-filter"><code>telem-filter</code></a>
+                    is a C++ program that reads SpaceX telemetry data and attempts to extract the horizontal and
+                    vertical velocity measurements. The big issue with the data was deducing the velocity components
+                    lead to a lot of noise in the output telemetry, which means a lot of curve fitting is generally
+                    needed (ref. <code>AgentTroll/liftoff</code>) in order to get good enough data. However, applying
+                    what I learned in my signals class, I attempted to use a digital filter to condition the output
+                    data. In the end, this lead to a shockingly good result, though somewhat inferior to curve fitting
+                    due to the amount of noise still remaining.
                 </li>
-                <li class="card-text">When I get the time, I work on my blog, linked above, on the side. I am a firm
-                    believer that one should always be adapting, moving forward, and learning new things on a consistent
-                    basis. I think that having overcome many problems in the world of software development, it is my
-                    duty to pass on some of what I've learned so that I can help other people learn as well. I don't
-                    think that I'm a big-time blogger or anything, but if the odd someone who either has the same
-                    problem as I, or someone who wants to learn more stumbles upon my blog out of the blue, I would
-                    consider that mission accomplished. Like I always say, you already proved that you are mildly
-                    interested by getting this far into the thick of whatever I'm writing, so it can't hurt to also look
-                    at whatever else I've written as well, since you couldn't be bothered to spend your time doing
-                    something else of course :)
+                <li class="card-text"><a href="https://github.com/AgentTroll/gfold"><code>gfold</code></a> is a C++
+                    implementation of the G-FOLD algorithm. G-FOLD is a guidance algorithm used on Mars landers and
+                    SpaceX rocket boosters to find the most optimal trajectory given a set of constraints. This project
+                    was a long time coming because I had difficulty finding a sufficiently good C++ library to perform
+                    convex optimization. This program runs one of the numerical examples in the original G-FOLD
+                    specification and plots the optimal trajectory. Unfortunately, I have yet to figure out how to
+                    discretize the algorithm, so the implementation is not yet complete. That being said, it still
+                    serves as a demo of the capability to implement real-time guidance computation in C++.
                 </li>
-            </ul>
-
-            <h5 class="card-title">Recent Works</h5>
-            <ul>
-                <li class="card-text">I've also been working on this particular project,
-                    <a href="https://github.com/AgentTroll/pbft-java"><code>pbft-java</code></a> for a long time. I
-                    actually had a lot more work done in 2018, but I recently decided to remove everything and start
-                    from scratch again in 2019. I over-thought the design, and didn't consider usability in the place of
-                    flexibility. Trying to conform to the protocol established by the PBFT whitepaper is one of the
-                    challenges I'm familiar with from working on the TridentSDK project, it's just that this time, I
-                    don't really have anything to test with to make sure I did everything right.
+                <li class="card-text"><a href="https://github.com/AgentTroll/liftoff"><code>liftoff</code></a> is a C++
+                    program that does much the same thing as <code>AgentTroll/telem-filter</code>, but instead utilizes
+                    curve fitting to condition the data rather than DSP techniques. I selected to curve fit the altitude
+                    data as the majority of the issues lie with the low data resolution of the altitude telemetry. I
+                    then implemented curve fitting using some bit of linear algebra to do a least-squares regression
+                    forced through certain points at the edge of events such as liftoff, main engine cutoff and second
+                    stage engine start. This results in very good data which does not propagate through the motion
+                    derivatives modelled using a physical body toolkit written in the project.
                 </li>
-                <li class="card-text">One of the more recent projects I've published is the
-                    <a href="https://github.com/AgentTroll/instant-skull"><code>instantskull</code></a> project to
-                    resolve an issue with player skulls not being updated on the clients side. This inspired by a
-                    question on the SpigotMC Forums, and I enjoyed being able to write the
-                    <a href="https://github.com/AgentTroll/lagger"><code>lagger</code></a> project to help me out in the
-                    process of debugging the problem as well.
+                <li class="card-text"><a href=https://github.com/AgentTroll/bt-support""><code>landing</code></a> is an
+                    Arduino project utilizing FreeRTOS to implement a basic flight computer. This program interacts with
+                    <code>AgentTroll/houston</code> over USB UART to simulate sensors and flight trajectory planning.
+                    This project utilizes a number of techniques to reduce RAM usage and RTOS task scheduling to
+                    organize several simulated components such as a flight termination systems, guidance/control and
+                    telemetry downlink.
                 </li>
-                <li class="card-text">I am particularly pleased with the
-                    <a href="https://github.com/AgentTroll/calamity"><code>calamity</code></a> project, which I wrote to
-                    help reduce the complexity of writing an accumulating buffer. I succeeded in writing a highly
-                    modular API that I can use in the future in case I need a <code>ByteArrayOutputStream</code>. By
-                    reducing the amount of garbage produced to buffer bytes and transfer them for encoding or decoding,
-                    I believe I can write lower latency networked applications in the future.
+                <li class="card-text"><a href="https://github.com/AgentTroll/bt-support"><code>bt-support</code></a> is
+                    a Zephyr project written in C++ to provide both bluetooth and USB UART support to an Adafruit
+                    nRF52840 Feather. The bluetooth support permits uplink and downlink to Nordic UART, accessible
+                    through the Bluefruit app.
                 </li>
-                <li class="card-text">One of my C projects is the
-                    <a href="https://github.com/AgentTroll/fate"><code>fate</code></a> project that I wrote to track
-                    objects in orbit around Earth. Because the Air Force publishes datasets that track the location of
-                    objects around earth in TLE format, I read up on the Space Track report and decoded that information
-                    to determine the position of objects in the sky. I was hoping that I could use this to connect to my
-                    telescope somehow, but I have so far been too lazy to get around to that.
+                <li class="card-text"><a href="https://github.com/AgentTroll/pbft-java"><code>pbft-java</code></a> was
+                    another project that has been in the works for a long time. It is a Java implementation of the
+                    PBFT algorithm, which is a protocol developed to create distributed systems capable of tolerating
+                    Byzantine faults. This project is split up into the client and server specification and
+                    implementation modules, which provides flexibility and conformance guarantees for the design of a
+                    PBFT system. PBFT is used for maintaining blockchain ledgers on multiple systems as well as for
+                    replicated flight computers, such as those used by SpaceX rockets.
                 </li>
-                <li class="card-text">Finally, another Java project that I think turned out well is my
-                    <a href="https://github.com/AgentTroll/molarmass"><code>molarmass</code></a> project. I was really
-                    frustrated by having to look up the masses of each individual element on the Periodic Table all the
-                    time to complete my Chemistry assignments, so I decided to write a little tool to help me out. The
-                    JSON parsing part to get all the mass data downloaded from the Internet was relatively trivial, but
-                    my best work is in decoding the actual elements from the input. I thought that the state machine
-                    design and the treeified form of the molecular formula was especially clever. I was also able to
-                    use <a href="https://cucumber.io/">Cucumber</a> to perform behavioral testing on it, which I found
-                    to be an interesting take on the development process.
+                <li class="card-text"><a href="https://github.com/AgentTroll/data-benchmark"><code>data-benchmark</code></a>
+                    is a benchmarking suite for different methods of persisting data, written in Java. There is a lot of
+                    debate over which method of data storage, between different formats of flatfile such as JSON, YAML
+                    and different databases such as MySQL and SQLite. I wrote a suite to measure and gather empirical
+                    evidence to inform my own decisions and design choices and decided to share it for others to benefit
+                    and to write their own test suites.
+                </li>
+                <li class="card-text"><a href="https://github.com/AgentTroll/molarmass"><code>molarmass</code></a> is a
+                    Java program that determines the molar mass of a compound based on its chemical formula. This is
+                    something that I am particularly proud of because it uses a state machine to parse and build a tree
+                    of compound tokens. This is then parsed to obtain the molar mass of each element and their
+                    quantities. In the end, I did not use this for AP Chemistry; but the fact remains that it was a
+                    really elegant way to compute molar masses, at least in the programmatic sense.
                 </li>
                 <li class="card-text">I can't put everything that I've done into a single webpage, so if you are
-                    interested in checking me out, you can browse the README files for all of my projects by clicking on
-                    my GitHub link at the top of the page.
-                </li>
-            </ul>
-
-            <h5 class="card-title">Early Works</h5>
-            <ul>
-                <li class="card-text">One of my earliest works was
-                    <a href="https://github.com/AgentTroll/TNTIgnite">TNTIgnite</a>, a plugin I wrote to learn the
-                    Bukkit API. This was followed by my attempt to write a
-                    <a href="https://bitbucket.org/AgentTroll/battledome">Battle Dome</a> plugin, which failed
-                    spectacularly.
-                </li>
-                <li class="card-text">I believe my first real work that was of decent quality was the
-                    <a href="https://github.com/AgentTroll/TrollCommons">BukkitCommons</a> library, now called
-                    TrollCommons. I was really proud of the work that I did in performance testing collections and
-                    reflection. I wrote a post talking about it on the Bukkit Forums
-                    <a href="https://bukkit.org/threads/bukkitcommons-commons-library-for-bukkit-utils.301356/">here</a>.
-                </li>
-                <li class="card-text">In 2014, I dropped almost every Bukkit project to work on the
-                    <a href="https://github.com/TridentSDK">TridentSDK project.</a> This turned out to be not as
-                    successful as the team had hoped, and it's been more or less abandoned since I left the project to
-                    work at Intermissum in 2017. I learned a significant lot about the Java language, including the
-                    networking internals, multithreading, and performance testing during my time working on TridentSDK.
-                    In addition, the experience working with the protocol as well as learning how the Mojang team solved
-                    problems with their server in recreating the Minecraft server was a valuable learning experience for
-                    me.
+                    interested in checkout out more of my projects, you can browse all of them by clicking on my GitHub
+                    link at the top of the page.
                 </li>
             </ul>
         </div>
@@ -202,20 +149,11 @@
     <div class="card" style="margin-top: 30px">
         <h5 class="card-header">My Tools</h5>
         <div class="card-body">
-            <p class="card-text">I frequently use <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> and
-                <a href="https://maven.apache.org/">Maven</a> to write my Java programs. I've yet to learn all the
-                features that Java 9+ offers, but I use JDK 11 and run Java 11 to test my programs.</p>
-            <p class="card-text">I also use other JetBrains IDEs like
-                <a href="https://www.jetbrains.com/clion/">CLion</a> and
-                <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> to write C/C++ and this website,
-                respectively.</p>
             <p class="card-text">My main OS is a Debian Bullseye machine running i3wm.</p>
             <p class="card-text">I am a huge fan of using Vim. I have <a href="https://neovim.io/">neovim</a> installed
                 on my computer, as well as the IdeaVim plugin installed on all the JetBrains IDEs I use.</p>
             <p class="card-text">I prefer using <a href="https://github.com/tonsky/FiraCode">Fira Code</a> in my IDE.
                 My theme for all IDEs is the Earthsong contrast color palette from the Rainglow themes plugin.</p>
-            <p class="card-text">As far as development environment goes, I use <a href="https://sdkman.io/">SDKMAN</a>
-                to download the JDK and Maven.</p>
             <p class="card-text">I believe in the importance of
                 <a href="https://agenttroll.github.io/blog/2019/07/28/lets-talk-privacy.html">digital privacy</a> and I
                 actively try to use privacy-respecting services and software where possible.</p>
@@ -226,9 +164,7 @@
     <div class="card" style="margin-top: 30px">
         <h5 class="card-header">Other</h5>
         <div class="card-body">
-            <p class="card-text">Outside of programming, I enjoy studying astronomy and spaceflight.</p>
-            <p class="card-text">I often do solo bike rides to destress. It's a chance for me to get out of my chair for
-                once and get some fresh air.</p>
+            <p class="card-text">My favorite non-programming activity is road cycling.</p>
             <p class="card-text">I play an unhealthy amount of Team Fortress 2 in my free time.</p>
             <p class="card-text">I'm a big fan of Star Wars. I also enjoy listening to Coldplay.</p>
 
