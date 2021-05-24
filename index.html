@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <meta charset="UTF-8">
-    <title>AgentTroll | Welcome</title>
+    <title>Johnny Cao | Welcome</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
         <div class="card-body">
             <h5 class="card-title">Useful Links</h5>
 
-            <a href="https://agenttroll.github.io/blog" class="btn btn-outline-info">Blog</a>
-            <a href="https://github.com/AgentTroll" class="btn btn-outline-dark">GitHub</a>
+            <a href="https://caojohnny.github.io/blog" class="btn btn-outline-info">Blog</a>
+            <a href="https://github.com/caojohnny" class="btn btn-outline-dark">GitHub</a>
             <a href="mailto:caojohnny@protonmail.com" class="btn btn-outline-danger">E-mail</a>
             <a href="https://www.linkedin.com/in/johnny-cao" class="btn btn-outline-info">LinkedIn</a>
         </div>
@@ -77,16 +77,16 @@
 
             <h5 class="card-title">Projects</h5>
             <ul>
-                <li class="card-text"><a href="https://github.com/AgentTroll/telem-filter"><code>telem-filter</code></a>
+                <li class="card-text"><a href="https://github.com/caojohnny/telem-filter"><code>telem-filter</code></a>
                     is a C++ program that reads SpaceX telemetry data and attempts to extract the horizontal and
                     vertical velocity measurements. The big issue with the data was deducing the velocity components
                     lead to a lot of noise in the output telemetry, which means a lot of curve fitting is generally
-                    needed (ref. <code>AgentTroll/liftoff</code>) in order to get good enough data. However, applying
+                    needed (ref. <code>caojohnny/liftoff</code>) in order to get good enough data. However, applying
                     what I learned in my signals class, I attempted to use a digital filter to condition the output
                     data. In the end, this lead to a shockingly good result, though somewhat inferior to curve fitting
                     due to the amount of noise still remaining.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/gfold"><code>gfold</code></a> is a C++
+                <li class="card-text"><a href="https://github.com/caojohnny/gfold"><code>gfold</code></a> is a C++
                     implementation of the G-FOLD algorithm. G-FOLD is a guidance algorithm used on Mars landers and
                     SpaceX rocket boosters to find the most optimal trajectory given a set of constraints. This project
                     was a long time coming because I had difficulty finding a sufficiently good C++ library to perform
@@ -95,8 +95,8 @@
                     discretize the algorithm, so the implementation is not yet complete. That being said, it still
                     serves as a demo of the capability to implement real-time guidance computation in C++.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/liftoff"><code>liftoff</code></a> is a C++
-                    program that does much the same thing as <code>AgentTroll/telem-filter</code>, but instead utilizes
+                <li class="card-text"><a href="https://github.com/caojohnny/liftoff"><code>liftoff</code></a> is a C++
+                    program that does much the same thing as <code>caojohnny/telem-filter</code>, but instead utilizes
                     curve fitting to condition the data rather than DSP techniques. I selected to curve fit the altitude
                     data as the majority of the issues lie with the low data resolution of the altitude telemetry. I
                     then implemented curve fitting using some bit of linear algebra to do a least-squares regression
@@ -104,19 +104,19 @@
                     stage engine start. This results in very good data which does not propagate through the motion
                     derivatives modelled using a physical body toolkit written in the project.
                 </li>
-                <li class="card-text"><a href=https://github.com/AgentTroll/bt-support""><code>landing</code></a> is an
+                <li class="card-text"><a href=https://github.com/caojohnny/bt-support""><code>landing</code></a> is an
                     Arduino project utilizing FreeRTOS to implement a basic flight computer. This program interacts with
-                    <code>AgentTroll/houston</code> over USB UART to simulate sensors and flight trajectory planning.
+                    <code>caojohnny/houston</code> over USB UART to simulate sensors and flight trajectory planning.
                     This project utilizes a number of techniques to reduce RAM usage and RTOS task scheduling to
                     organize several simulated components such as a flight termination systems, guidance/control and
                     telemetry downlink.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/bt-support"><code>bt-support</code></a> is
+                <li class="card-text"><a href="https://github.com/caojohnny/bt-support"><code>bt-support</code></a> is
                     a Zephyr project written in C++ to provide both bluetooth and USB UART support to an Adafruit
                     nRF52840 Feather. The bluetooth support permits uplink and downlink to Nordic UART, accessible
                     through the Bluefruit app.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/pbft-java"><code>pbft-java</code></a> was
+                <li class="card-text"><a href="https://github.com/caojohnny/pbft-java"><code>pbft-java</code></a> was
                     another project that has been in the works for a long time. It is a Java implementation of the
                     PBFT algorithm, which is a protocol developed to create distributed systems capable of tolerating
                     Byzantine faults. This project is split up into the client and server specification and
@@ -124,14 +124,14 @@
                     PBFT system. PBFT is used for maintaining blockchain ledgers on multiple systems as well as for
                     replicated flight computers, such as those used by SpaceX rockets.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/data-benchmark"><code>data-benchmark</code></a>
+                <li class="card-text"><a href="https://github.com/caojohnny/data-benchmark"><code>data-benchmark</code></a>
                     is a benchmarking suite for different methods of persisting data, written in Java. There is a lot of
                     debate over which method of data storage, between different formats of flatfile such as JSON, YAML
                     and different databases such as MySQL and SQLite. I wrote a suite to measure and gather empirical
                     evidence to inform my own decisions and design choices and decided to share it for others to benefit
                     and to write their own test suites.
                 </li>
-                <li class="card-text"><a href="https://github.com/AgentTroll/molarmass"><code>molarmass</code></a> is a
+                <li class="card-text"><a href="https://github.com/caojohnny/molarmass"><code>molarmass</code></a> is a
                     Java program that determines the molar mass of a compound based on its chemical formula. This is
                     something that I am particularly proud of because it uses a state machine to parse and build a tree
                     of compound tokens. This is then parsed to obtain the molar mass of each element and their
@@ -155,7 +155,7 @@
             <p class="card-text">I prefer using <a href="https://github.com/tonsky/FiraCode">Fira Code</a> in my IDE.
                 My theme for all IDEs is the Earthsong contrast color palette from the Rainglow themes plugin.</p>
             <p class="card-text">I believe in the importance of
-                <a href="https://agenttroll.github.io/blog/2019/07/28/lets-talk-privacy.html">digital privacy</a> and I
+                <a href="https://caojohnny.github.io/blog/2019/07/28/lets-talk-privacy.html">digital privacy</a> and I
                 actively try to use privacy-respecting services and software where possible.</p>
             <img src="./media/debian.png" alt="Debian neofetch" class="img-fluid">
         </div>
